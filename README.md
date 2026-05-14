@@ -22,6 +22,24 @@ Once done press `start implementation`
 
 ![alt text](images/start_implementation.png)
 
+### Chatting to the chatbot
+
+To start the app try:
+
+```
+npm run dev
+```
+
+Here are some questions to test the chatbot
+
+```
+Q1) สวัสดีครับ
+Q2) พนักงานหญิงลาคลอดได้กี่วัน
+Q3) ผมชื่อมิวจำไว้นะ
+Q4) ผมชื่ออะไร
+```
+![alt text](images/image.png)
+
 Select agent mode and type the following
 
 ```

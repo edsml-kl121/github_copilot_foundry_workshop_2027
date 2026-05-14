@@ -47,6 +47,12 @@ Generate system design document and use mermaid to generate markdown file called
 ```
 (If you haven't already please install the `Markdown Preview Mermaid support` extension from VS code)
 
+switch to GPT-5.4 and agent mode. Type the following prompt
+```
+Please redesign UI to look like <path_to_image>
+```
+Look at how our UI design look just like the image we chose:
+![alt text](image.png)
 
 ### Option 2 Spec-driven Development:
 

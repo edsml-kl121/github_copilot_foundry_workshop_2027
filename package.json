@@ -1,0 +1,17 @@
+{
+  "name": "mof-foundry-workshop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Workshop template — three Microsoft Foundry examples (chat, file search, vision).",
+  "scripts": {
+    "example:1": "node src/01_basic_chat.js",
+    "example:2": "node src/02_file_search.js",
+    "example:3": "node src/03_image.js"
+  },
+  "dependencies": {
+    "@azure/ai-agents": "^1.1.0",
+    "@azure/identity": "^4.5.0",
+    "dotenv": "^16.4.5",
+    "openai": "^4.73.0"
+  }
+}

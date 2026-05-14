@@ -2,8 +2,35 @@
 
 ### Pre-requisites
 
+Please ensure you have installed node.js by checking
 
-### Flow:
+`npm -v` or `node -v`
+
+Next duplicate `.env.template` file and rename it to `.env` please fill the environmental variable provided by the instructor.
+
+### Option 1 Plan and Agent mode:
+
+Switch your agent to Plan mode. Type the following with `claude-sonnet-4.6`
+```
+Please read the meeting transcript at data/meeting_transcript.txt first — it has all the decisions we made about what to build. Then build the chatbot based on that.
+
+The app uses Azure AI Foundry with File Search tool, source files are in /data. Build it with Vite but keep it vanilla HTML, CSS, and JavaScript as much as possible, minimal libraries. Chat history should just live in memory, no database needed.
+
+For any Foundry API calls, follow the examples already in src/01_basic_chat.js, src/02_file_search.js, and src/03_image.js — don't invent your own patterns.
+```
+Once done press `start implementation`
+
+![alt text](images/start_implementation.png)
+
+Select agent mode and type the following
+
+```
+Generate system design document and use mermaid to generate markdown file called documentation.md
+```
+(If you haven't already please install the `Markdown Preview Mermaid support` extension from VS code)
+
+
+### Option 2 Spec-driven Development:
 
 ```
 /speckit.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements

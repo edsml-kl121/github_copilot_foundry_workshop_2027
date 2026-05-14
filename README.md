@@ -8,26 +8,52 @@
 ```
 /speckit.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements
 ```
+This step defines the working rules for the build before generating any code following coding practices we declare.
+
+![alt text](images/constitution.png)
+
 ```
 /speckit.specify Build a chatbot application that can help me answer query regarding HR pdf using Microsoft Foundry and File search tool and the data we use is at /data please also read the meeting transcript from data/meeting_transcript.txt and follow the plan there
 ```
+This is where the product requirement gets written down in detail. The prompt tells Speckit what the app should do, what source documents it should use, and which constraints matter for this workshop and list out features, requirements and user stories and assumptions.
+![alt text](images/specify.png)
 
 ```
 /speckit.plan The application will be built with Vite with minimal number of libraries. Use vanilla HTML, CSS, and JavaScript as much as possible. The sessions is stored locally in memory without requirement for external database. Whenever use Foundry please follow the examples in src/01_basic_chat.js or src/02_file_search.js or src/03_image.js to call foundry APIs
 ```
+This step converts the requirement into an implementation plan. In practical terms, it tells the agent how to structure the project
+The Vite plus vanilla JS guidance also keeps the generated app easy to inspect during the workshop, instead of hiding the main logic behind a large framework.
+
+![alt text](images/plan.png)
+
 ```
 /speckit.tasks
 ```
+This breaks the plan into concrete implementation tasks, for example setting up the frontend, wiring the backend call to Foundry, ingesting the files from `data/`, storing chat session state locally, and validating that answers are grounded in the source material.
+
+![alt text](images/tasks.png)
+
 ```
 /specikit.implement
 ```
+This is the execution step where the planned tasks get turned into code. At that point, Speckit should generate the actual app structure, reuse the Foundry calling patterns demonstrated in `src/`, and produce a chatbot that can answer HR questions based on the workshop documents.
+
+![alt text](images/implement.png)
 
 ### Chatting to the chatbot
+
+To start the app try:
+
+```
+npm run dev
+```
+
+Here are some questions to test the chatbot
 
 ```
 Q1) สวัสดีครับ
 Q2) พนักงานหญิงลาคลอดได้กี่วัน
 Q3) ผมชื่อมิวจำไว้นะ
-Q4) 
+Q4) ผมชื่ออะไร
 ```
 ![alt text](images/image.png)

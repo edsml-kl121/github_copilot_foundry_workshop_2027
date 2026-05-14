@@ -3,7 +3,7 @@
 ### Pre-requisites
 
 
-### Command to type:
+### Flow:
 
 ```
 /speckit.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements
@@ -21,3 +21,13 @@
 ```
 /specikit.implement
 ```
+
+### Chatting to the chatbot
+
+```
+Q1) สวัสดีครับ
+Q2) พนักงานหญิงลาคลอดได้กี่วัน
+Q3) ผมชื่อมิวจำไว้นะ
+Q4) 
+```
+![alt text](images/image.png)

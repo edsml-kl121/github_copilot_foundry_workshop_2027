@@ -8,7 +8,7 @@ npm -v
 node -v
 ```
 
-Next duplicate `.env.template` file and rename it to `.env` please fill the environmental variable provided by the instructor.
+Next duplicate `.env.template` file and rename it to `.env`. Then please replace the following environmental variable `FOUNDRY_ENDPOINT`, `FOUNDRY_API_KEY`, `FOUNDRY_PROJECT_ENDPOINT` provided by the instructor.
 
 Pre-requisites for spec-kit:
 

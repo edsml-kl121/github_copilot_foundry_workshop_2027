@@ -21,7 +21,7 @@ function getConfig() {
   return {
     endpoint: endpoint.endsWith("/") ? endpoint : endpoint + "/",
     apiKey: required("FOUNDRY_API_KEY"),
-    projectEndpoint: process.env.FOUNDRY_PROJECT_ENDPOINT, // only required by example 2
+    projectEndpoint: process.env.FOUNDRY_PROJECT_ENDPOINT, // optional, not used by examples
     apiVersion: process.env.FOUNDRY_API_VERSION || "2024-10-21",
     chatDeployment: process.env.FOUNDRY_DEPLOYMENT_CHAT || "gpt-4o-mini",
     agentDeployment: process.env.FOUNDRY_DEPLOYMENT_AGENT || "gpt-4o-mini",

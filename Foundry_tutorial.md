@@ -68,18 +68,16 @@ node src/03_image.js
 
 ## Authentication notes
 
-- Examples **1** and **3** use the API key from `.env`.
-- Example **2** uses the project endpoint + `DefaultAzureCredential`, so you
-  must `az login` first. Your signed-in identity needs the **Azure AI User**
-  role (or higher) on the Foundry project. Replace your own data files in
-  `data/` to try other PDFs / images.
+- All three examples authenticate with the **API key** from `.env`
+  (`FOUNDRY_API_KEY`). No `az login` and no Microsoft Entra ID role assignment
+  is required. Replace your own data files in `data/` to try other PDFs /
+  images.
 
 ## Troubleshooting
 
 | Symptom | Likely cause |
 |---|---|
 | `Missing or placeholder value for FOUNDRY_*` | You didn't copy `.env.template` to `.env` or didn't replace the placeholder. |
-| `401 Unauthorized` on examples 1/3 | Wrong `FOUNDRY_API_KEY`, or it's tied to a different Foundry resource than `FOUNDRY_ENDPOINT`. |
-| `403 Forbidden` on example 2 | You're logged in (`az login`) but lack `Azure AI User` on the project. |
+| `401 Unauthorized` on any example | Wrong `FOUNDRY_API_KEY`, or it's tied to a different Foundry resource than `FOUNDRY_ENDPOINT`. |
 | `DeploymentNotFound` | `FOUNDRY_DEPLOYMENT_*` doesn't match a deployment that exists on your resource. |
 | Example 2 hangs | First-time vector store ingestion can take ~30s for a multi-page PDF — wait it out. |

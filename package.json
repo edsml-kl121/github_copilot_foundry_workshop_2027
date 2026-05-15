@@ -6,12 +6,22 @@
   "scripts": {
     "example:1": "node src/01_basic_chat.js",
     "example:2": "node src/02_file_search.js",
-    "example:3": "node src/03_image.js"
+    "example:3": "node src/03_image.js",
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@azure/ai-agents": "^1.1.0",
-    "@azure/identity": "^4.5.0",
     "dotenv": "^16.4.5",
     "openai": "^4.73.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "vite": "^5.0.0",
+    "vitest": "^2.0.0"
   }
 }

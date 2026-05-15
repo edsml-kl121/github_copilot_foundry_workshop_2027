@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOF HR แชท</title>
+    <link rel="stylesheet" href="/app/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="topbar__left">
+          <button class="icon-btn" type="button" aria-label="Notifications">⌂</button>
+        </div>
+        <div class="topbar__center" aria-label="Mode switch">
+          <button class="mode-tab mode-tab--active" type="button">Work</button>
+          <button class="mode-tab" type="button">Web</button>
+        </div>
+        <div class="topbar__right">
+          <button class="ghost-btn" type="button">Auto</button>
+          <button class="primary-btn" type="button">New</button>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <section class="chat-canvas">
+          <div class="messages" id="messages"></div>
+        </section>
+      </main>
+
+      <footer class="composer-shell">
+        <div class="composer">
+          <button class="composer__tool" id="add-btn" type="button" aria-label="Add">+</button>
+          <textarea
+            id="input"
+            rows="1"
+            placeholder="Message MOF HR แชท"
+            disabled
+          ></textarea>
+          <div class="composer__actions">
+            <button class="composer__tool" type="button" aria-label="Voice">Mic</button>
+            <button id="send-btn" class="composer__send" disabled>ส่ง</button>
+          </div>
+        </div>
+        <p class="disclaimer">ข้อมูลจาก AI อาจมีความคลาดเคลื่อน กรุณาตรวจสอบกับฝ่าย HR โดยตรง</p>
+      </footer>
+    </div>
+
+    <script type="module" src="/app/main.js"></script>
+  </body>
+</html>

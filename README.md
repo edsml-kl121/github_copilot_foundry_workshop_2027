@@ -8,53 +8,29 @@ Please ensure you have installed node.js by checking
 
 Next duplicate `.env.template` file and rename it to `.env` please fill the environmental variable provided by the instructor.
 
-### Option 1 Plan and Agent mode:
+Pre-requisites for spec-kit:
 
-Switch your agent to Plan mode. Type the following with `claude-sonnet-4.6`
+Please install uv: 
+http://github.com/github/spec-kit/blob/main/docs/install/uv.md
+
+Afterwards install the speckit CLI
 ```
-Please read the meeting transcript at data/meeting_transcript.txt first — it has all the decisions we made about what to build. Then build the chatbot based on that.
-
-The app uses Azure AI Foundry with File Search tool, source files are in /data. Build it with Vite but keep it vanilla HTML, CSS, and JavaScript as much as possible, minimal libraries. Chat history should just live in memory, no database needed.
-
-For any Foundry API calls, follow the examples already in src/01_basic_chat.js, src/02_file_search.js, and src/03_image.js — don't invent your own patterns.
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@v0.8.10
 ```
-Once done press `start implementation`
-
-![alt text](images/start_implementation.png)
-
-### Chatting to the chatbot
-
-To start the app try:
-
+Please clone or download the repo. (See here for Git installation https://git-scm.com/book/en/v2/Getting-Started-Installing-Git):
 ```
-npm run dev
+git clone https://github.com/edsml-kl121/github_copilot_foundry_workshop_2027.git
 ```
 
-Here are some questions to test the chatbot
+```
+cd github_copilot_foundry_workshop_2027
+```
+Then,
+```
+specify init . --integration copilot
+```
 
-```
-Q1) สวัสดีครับ
-Q2) พนักงานหญิงลาคลอดได้กี่วัน
-Q3) ผมชื่อมิวจำไว้นะ
-Q4) ผมชื่ออะไร
-```
-![alt text](images/image.png)
-
-Select agent mode and type the following
-
-```
-Generate system design document and use mermaid to generate markdown file called documentation.md
-```
-(If you haven't already please install the `Markdown Preview Mermaid support` extension from VS code)
-
-switch to GPT-5.4 and agent mode. Type the following prompt
-```
-Please redesign UI to look like <path_to_image>
-```
-Look at how our UI design look just like the image we chose:
-![alt text](image.png)
-
-### Option 2 Spec-driven Development:
+### Option 1 Spec-driven Development:
 
 ```
 /speckit.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements
@@ -108,3 +84,50 @@ Q3) ผมชื่อมิวจำไว้นะ
 Q4) ผมชื่ออะไร
 ```
 ![alt text](images/image.png)
+
+
+### Option 2 Plan and Agent mode:
+
+Switch your agent to Plan mode. Type the following with `claude-sonnet-4.6`
+```
+Please read the meeting transcript at data/meeting_transcript.txt first — it has all the decisions we made about what to build. Then build the chatbot based on that.
+
+The app uses Azure AI Foundry with File Search tool, source files are in /data. Build it with Vite but keep it vanilla HTML, CSS, and JavaScript as much as possible, minimal libraries. Chat history should just live in memory, no database needed.
+
+For any Foundry API calls, follow the examples already in src/01_basic_chat.js, src/02_file_search.js, and src/03_image.js — don't invent your own patterns.
+```
+Once done press `start implementation`
+
+![alt text](images/start_implementation.png)
+
+### Chatting to the chatbot
+
+To start the app try:
+
+```
+npm run dev
+```
+
+Here are some questions to test the chatbot
+
+```
+Q1) สวัสดีครับ
+Q2) พนักงานหญิงลาคลอดได้กี่วัน
+Q3) ผมชื่อมิวจำไว้นะ
+Q4) ผมชื่ออะไร
+```
+![alt text](images/image.png)
+
+Select agent mode and type the following
+
+```
+Generate system design document and use mermaid to generate markdown file called documentation.md
+```
+(If you haven't already please install the `Markdown Preview Mermaid support` extension from VS code)
+
+switch to GPT-5.4 and agent mode. Type the following prompt
+```
+Please redesign UI to look like <path_to_image>
+```
+Look at how our UI design look just like the image we chose:
+![alt text](image.png)

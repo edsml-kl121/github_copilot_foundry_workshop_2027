@@ -21,6 +21,13 @@ Afterwards install the speckit CLI
 ```
 uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@v0.8.10
 ```
+
+Please check if speckit is successfully installed
+
+```
+specify --version
+```
+
 Please clone or download the repo. (See here for Git installation https://git-scm.com/book/en/v2/Getting-Started-Installing-Git):
 ```
 git clone https://github.com/edsml-kl121/github_copilot_foundry_workshop_2027.git

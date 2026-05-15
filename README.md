@@ -2,9 +2,13 @@
 
 ### Pre-requisites
 
-Please ensure you have installed node.js by checking
+Please ensure you have installed node.js at https://nodejs.org/en/download
 
-`npm -v` or `node -v`
+Then check if the following runs sucessfully
+```
+npm -v 
+node -v
+```
 
 Next duplicate `.env.template` file and rename it to `.env` please fill the environmental variable provided by the instructor.
 

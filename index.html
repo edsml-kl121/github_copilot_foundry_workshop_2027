@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOF HR แชท</title>
+    <link rel="stylesheet" href="/app/style.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>MOF HR แชท</h1>
+    </header>
+    <main class="app-main">
+      <div id="messages" class="messages" aria-live="polite"></div>
+    </main>
+    <form id="chat-form" class="chat-form">
+      <textarea
+        id="user-input"
+        aria-label="พิมพ์คำถามของคุณ"
+        placeholder="พิมพ์คำถามเกี่ยวกับนโยบายการลา..."
+        rows="2"
+      ></textarea>
+      <button id="send-btn" aria-label="ส่งข้อความ" type="submit" disabled>ส่ง</button>
+    </form>
+    <div id="disclaimer">
+      ข้อมูลจาก AI อาจมีความคลาดเคลื่อน กรุณาตรวจสอบกับฝ่าย HR โดยตรง
+    </div>
+
+    <script type="module" src="/app/main.js"></script>
+  </body>
+</html>

@@ -4,6 +4,11 @@
   "private": true,
   "description": "Workshop template — three Microsoft Foundry examples (chat, file search, vision).",
   "scripts": {
+    "dev": "concurrently \"vite\" \"node server/index.js\"",
+    "build": "vite build",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
     "example:1": "node src/01_basic_chat.js",
     "example:2": "node src/02_file_search.js",
     "example:3": "node src/03_image.js"
@@ -11,7 +16,13 @@
   "dependencies": {
     "@azure/ai-agents": "^1.1.0",
     "@azure/identity": "^4.5.0",
+    "concurrently": "^9.2.0",
     "dotenv": "^16.4.5",
-    "openai": "^4.73.0"
+    "express": "^4.21.2",
+    "openai": "^4.73.0",
+    "vite": "^5.4.10"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.2"
   }
 }
